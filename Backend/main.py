@@ -34,30 +34,16 @@ def analyze_folder():
                     code = f.read()
 
                 # Long Parameter List
-                # results["long_parameter_list"].extend(detect_long_parameter_list(code))
                 long_params = detect_long_parameter_list(code)
                 if long_params:
                     results["long_parameter_list"].append({"file": file, "issues": long_params})
 
                 # Long Methods
-                # results["long_methods"].extend(detect_long_methods(code))
                 long_methods = detect_long_methods(code)
                 if long_methods:
                     results["long_methods"].append({"file": file, "issues": long_methods})
 
                 # God Classes
-                # results["god_classes"].extend(detect_god_classes(code))
-                """ god_class_detector = GodClassDetector(code)
-                tree = ast.parse(code)
-                god_class_detector.visit(tree)
-                god_classes = god_class_detector.detect_god_classes()
-                for class_name, metrics in god_classes:
-                    results["god_classes"].append({
-                        "class_name": class_name,
-                        "wmc": metrics["wmc"],
-                        "tcc": metrics["tcc"],
-                        "atfd": metrics["atfd"]
-                    }) """
                 god_class_detector = GodClassDetector(code)
                 tree = ast.parse(code)
                 god_class_detector.visit(tree)
@@ -73,7 +59,6 @@ def analyze_folder():
                         })
 
                 # Large Classes
-                # results["large_classes"].extend(detect_large_classes(code))
                 large_classes = detect_large_classes(code)
                 if large_classes:
                     results["large_classes"].append({"file": file, "issues": large_classes})

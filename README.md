@@ -97,7 +97,7 @@ Below is the endpoint exposed by the Flask backend:
 |--------|-----------------|--------------------------------------|
 | POST   | /analyze-folder | Analyzes Python code for code smells |
 
-##Contact
+## Contact
 For any questions or suggestions, contact:
 
 Name: [Muhammad Ahmad]

@@ -1,6 +1,6 @@
 import ast
 
-def detect_long_parameter_list(file_content, threshold=7):
+def detect_long_parameter_list(file_content, threshold=10):
     tree = ast.parse(file_content)
     results = []
 

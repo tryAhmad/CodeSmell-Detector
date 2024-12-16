@@ -73,7 +73,7 @@ class GodClassDetector(ast.NodeVisitor):
                         foreign_accesses.add((node.func.value.id, node.func.attr))
         return len(foreign_accesses)
 
-    def detect_god_classes(self, wmc_threshold=39, tcc_threshold=1 / 3, atfd_threshold=2):
+    def detect_god_classes(self, wmc_threshold=41, tcc_threshold=1 / 3, atfd_threshold=5):
         god_classes = []
         for class_name, metrics in self.classes.items():
             if metrics["wmc"] >= wmc_threshold and metrics["tcc"] < tcc_threshold and metrics["atfd"] > atfd_threshold:

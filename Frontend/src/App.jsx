@@ -43,6 +43,11 @@ const App = () => {
     }
   };
 
+  const totalLongParameterSmells = results?.long_parameter_list?.reduce(
+    (total, file) => total + file.issues.length,
+    0
+  );
+
   const renderResults = () => {
     if (!results) return null;
 
@@ -54,6 +59,11 @@ const App = () => {
           {results.long_methods?.length > 0 && (
             <div className="result-card">
               <h3>Long Methods</h3>
+              <strong>Code Smells Detected:</strong>{" "}
+              {results.long_methods.reduce(
+                (total, file) => total + file.issues.length,
+                0
+              ) || "0"}
               <ul>
                 {results.long_methods.map((file, fileIndex) => (
                   <li key={fileIndex}>
@@ -90,6 +100,8 @@ const App = () => {
           {results.god_classes?.length > 0 && (
             <div className="result-card">
               <h3>God Classes</h3>
+              <strong>Code Smells Detected:</strong>{" "}
+              {results.god_classes.length || "0"}
               <ul>
                 {results.god_classes.map((cls, index) => (
                   <li key={index}>
@@ -119,6 +131,11 @@ const App = () => {
           {results.large_classes?.length > 0 && (
             <div className="result-card">
               <h3>Large Classes</h3>
+              <strong>Code Smells Detected:</strong>{" "}
+              {results.large_classes.reduce(
+                (total, file) => total + file.issues.length,
+                0
+              ) || "0"}
               <ul>
                 {results.large_classes.map((file, fileIndex) => (
                   <li key={fileIndex}>
@@ -149,9 +166,11 @@ const App = () => {
           )}
 
           {/* Functions with Long Parameter Lists */}
-          {results.long_parameter_list?.length > 0 && (
+          {results?.long_parameter_list?.length > 0 && (
             <div className="result-card">
               <h3>Functions with Long Parameter Lists</h3>
+              <strong>Code Smells Detected:</strong>{" "}
+              {totalLongParameterSmells || "0"}
               <ul>
                 {results.long_parameter_list.map((file, fileIndex) => (
                   <li key={fileIndex}>
@@ -235,7 +254,7 @@ const App = () => {
           style={{
             marginLeft: "10px",
             padding: "5px",
-            width: "300px",
+            width: "610px",
             color: "black",
             backgroundColor: "white",
             border: "none",

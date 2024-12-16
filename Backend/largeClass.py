@@ -1,7 +1,7 @@
 import ast
 
 class LargeClassDetector(ast.NodeVisitor):
-    def __init__(self, nloc_threshold=10):
+    def __init__(self, nloc_threshold=1000):
         self.nloc_threshold = nloc_threshold
         self.large_classes = []
 
@@ -20,7 +20,7 @@ class LargeClassDetector(ast.NodeVisitor):
 
         self.generic_visit(node)
 
-def detect_large_classes(file_content, nloc_threshold=10):
+def detect_large_classes(file_content, nloc_threshold=1000):
     tree = ast.parse(file_content)
     detector = LargeClassDetector(nloc_threshold)
     detector.visit(tree)

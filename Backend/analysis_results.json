@@ -1,87 +1,2407 @@
 {
     "long_parameter_list": [
         {
-            "file": "aa.py",
+            "file": "extension.py",
             "issues": [
                 {
-                    "function_name": "process_data",
-                    "line_number": 6,
-                    "parameter_count": 9,
-                    "threshold": 7
+                    "function_name": "__init__",
+                    "line_number": 33,
+                    "parameter_count": 22,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "mingw32ccompiler.py",
+            "issues": [
+                {
+                    "function_name": "link",
+                    "line_number": 114,
+                    "parameter_count": 14,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "__init__.py",
+            "issues": [
+                {
+                    "function_name": "link",
+                    "line_number": 650,
+                    "parameter_count": 14,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "_backend.py",
+            "issues": [
+                {
+                    "function_name": "__init__",
+                    "line_number": 7,
+                    "parameter_count": 17,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "_meson.py",
+            "issues": [
+                {
+                    "function_name": "__init__",
+                    "line_number": 20,
+                    "parameter_count": 12,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "_npyio_impl.py",
+            "issues": [
+                {
+                    "function_name": "_read",
+                    "line_number": 871,
+                    "parameter_count": 13,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "loadtxt",
+                    "line_number": 1131,
+                    "parameter_count": 13,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "genfromtxt",
+                    "line_number": 1749,
+                    "parameter_count": 25,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "core.py",
+            "issues": [
+                {
+                    "function_name": "array",
+                    "line_number": 6903,
+                    "parameter_count": 11,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "__new__",
+                    "line_number": 2877,
+                    "parameter_count": 12,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "mrecords.py",
+            "issues": [
+                {
+                    "function_name": "__new__",
+                    "line_number": 95,
+                    "parameter_count": 17,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "utils.py",
+            "issues": [
+                {
+                    "function_name": "assert_array_compare",
+                    "line_number": 693,
+                    "parameter_count": 11,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "arrayprint.py",
+            "issues": [
+                {
+                    "function_name": "_make_options_dict",
+                    "line_number": 50,
+                    "parameter_count": 12,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "set_printoptions",
+                    "line_number": 114,
+                    "parameter_count": 12,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "_set_printoptions",
+                    "line_number": 298,
+                    "parameter_count": 12,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "_array2string_dispatcher",
+                    "line_number": 596,
+                    "parameter_count": 14,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "array2string",
+                    "line_number": 606,
+                    "parameter_count": 14,
+                    "threshold": 10
+                }
+            ]
+        },
+        {
+            "file": "records.py",
+            "issues": [
+                {
+                    "function_name": "array",
+                    "line_number": 945,
+                    "parameter_count": 11,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "__new__",
+                    "line_number": 389,
+                    "parameter_count": 12,
+                    "threshold": 10
                 }
             ]
         }
     ],
     "long_methods": [
         {
-            "file": "example.py",
+            "file": "ctypeslib.py",
             "issues": [
                 {
+                    "function_name": "ndpointer",
+                    "start_line": 231,
+                    "end_line": 345,
+                    "line_count": 115,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_array_api_info.py",
+            "issues": [
+                {
+                    "function_name": "dtypes",
+                    "start_line": 186,
+                    "end_line": 319,
+                    "line_count": 134,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_pytesttester.py",
+            "issues": [
+                {
+                    "function_name": "__call__",
+                    "start_line": 79,
+                    "end_line": 200,
+                    "line_count": 122,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "ccompiler.py",
+            "issues": [
+                {
+                    "function_name": "CCompiler_compile",
+                    "start_line": 234,
+                    "end_line": 372,
+                    "line_count": 139,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "ccompiler_opt.py",
+            "issues": [
+                {
+                    "function_name": "conf_features_partial",
+                    "start_line": 330,
+                    "end_line": 569,
+                    "line_count": 240,
+                    "threshold": 100
+                },
+                {
                     "function_name": "__init__",
-                    "start_line": 123,
-                    "end_line": 133,
-                    "line_count": 11,
-                    "threshold": 10
+                    "start_line": 962,
+                    "end_line": 1078,
+                    "line_count": 117,
+                    "threshold": 100
                 },
                 {
-                    "function_name": "_load_complex_configuration",
-                    "start_line": 135,
-                    "end_line": 148,
-                    "line_count": 14,
-                    "threshold": 10
+                    "function_name": "_parse_target_tokens",
+                    "start_line": 1952,
+                    "end_line": 2066,
+                    "line_count": 115,
+                    "threshold": 100
                 },
                 {
-                    "function_name": "perform_complex_data_operation",
-                    "start_line": 150,
-                    "end_line": 186,
-                    "line_count": 37,
-                    "threshold": 10
+                    "function_name": "report",
+                    "start_line": 2439,
+                    "end_line": 2546,
+                    "line_count": 108,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "misc_util.py",
+            "issues": [
+                {
+                    "function_name": "generate_config_py",
+                    "start_line": 2319,
+                    "end_line": 2448,
+                    "line_count": 130,
+                    "threshold": 100
                 },
                 {
-                    "function_name": "_validate_input",
-                    "start_line": 188,
-                    "end_line": 203,
-                    "line_count": 16,
-                    "threshold": 10
+                    "function_name": "add_data_dir",
+                    "start_line": 1061,
+                    "end_line": 1180,
+                    "line_count": 120,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "add_data_files",
+                    "start_line": 1191,
+                    "end_line": 1340,
+                    "line_count": 150,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "add_extension",
+                    "start_line": 1433,
+                    "end_line": 1534,
+                    "line_count": 102,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "add_npy_pkg_config",
+                    "start_line": 1639,
+                    "end_line": 1743,
+                    "line_count": 105,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "system_info.py",
+            "issues": [
+                {
+                    "function_name": "calc_info",
+                    "start_line": 1661,
+                    "end_line": 1763,
+                    "line_count": 103,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "build_clib.py",
+            "issues": [
+                {
+                    "function_name": "build_a_library",
+                    "start_line": 212,
+                    "end_line": 469,
+                    "line_count": 258,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "build_ext.py",
+            "issues": [
+                {
+                    "function_name": "run",
+                    "start_line": 96,
+                    "end_line": 353,
+                    "line_count": 258,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "build_extension",
+                    "start_line": 359,
+                    "end_line": 628,
+                    "line_count": 270,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "build_src.py",
+            "issues": [
+                {
+                    "function_name": "f2py_sources",
+                    "start_line": 466,
+                    "end_line": 602,
+                    "line_count": 137,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "swig_sources",
+                    "start_line": 604,
+                    "end_line": 716,
+                    "line_count": 113,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "__init__.py",
+            "issues": [
+                {
+                    "function_name": "customize",
+                    "start_line": 439,
+                    "end_line": 554,
+                    "line_count": 116,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "capi_maps.py",
+            "issues": [
+                {
+                    "function_name": "sign2map",
+                    "start_line": 483,
+                    "end_line": 586,
+                    "line_count": 104,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "cb_rules.py",
+            "issues": [
+                {
+                    "function_name": "buildcallback",
+                    "start_line": 519,
+                    "end_line": 643,
+                    "line_count": 125,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "common_rules.py",
+            "issues": [
+                {
+                    "function_name": "buildhooks",
+                    "start_line": 42,
+                    "end_line": 146,
+                    "line_count": 105,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "crackfortran.py",
+            "issues": [
+                {
+                    "function_name": "readfortrancode",
+                    "start_line": 357,
+                    "end_line": 582,
+                    "line_count": 226,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "crackline",
+                    "start_line": 698,
+                    "end_line": 854,
+                    "line_count": 157,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "analyzeline",
+                    "start_line": 993,
+                    "end_line": 1585,
+                    "line_count": 593,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "updatevars",
+                    "start_line": 1689,
+                    "end_line": 1855,
+                    "line_count": 167,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "analyzevars",
+                    "start_line": 2604,
+                    "end_line": 2992,
+                    "line_count": 389,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "vars2fortran",
+                    "start_line": 3391,
+                    "end_line": 3516,
+                    "line_count": 126,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "diagnose.py",
+            "issues": [
+                {
+                    "function_name": "run",
+                    "start_line": 13,
+                    "end_line": 152,
+                    "line_count": 140,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "f2py2e.py",
+            "issues": [
+                {
+                    "function_name": "scaninputline",
+                    "start_line": 197,
+                    "end_line": 337,
+                    "line_count": 141,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "run_compile",
+                    "start_line": 592,
+                    "end_line": 753,
+                    "line_count": 162,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "f90mod_rules.py",
+            "issues": [
+                {
+                    "function_name": "buildhooks",
+                    "start_line": 82,
+                    "end_line": 270,
+                    "line_count": 189,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "func2subr.py",
+            "issues": [
+                {
+                    "function_name": "createfuncwrapper",
+                    "start_line": 78,
+                    "end_line": 199,
+                    "line_count": 122,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "rules.py",
+            "issues": [
+                {
+                    "function_name": "buildmodule",
+                    "start_line": 1245,
+                    "end_line": 1446,
+                    "line_count": 202,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "buildapi",
+                    "start_line": 1454,
+                    "end_line": 1569,
+                    "line_count": 116,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "symbolic.py",
+            "issues": [
+                {
+                    "function_name": "normalize",
+                    "start_line": 791,
+                    "end_line": 925,
+                    "line_count": 135,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "tostring",
+                    "start_line": 276,
+                    "end_line": 420,
+                    "line_count": 145,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "process",
+                    "start_line": 1317,
+                    "end_line": 1517,
+                    "line_count": 201,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_pocketfft.py",
+            "issues": [
+                {
+                    "function_name": "ifft",
+                    "start_line": 214,
+                    "end_line": 315,
+                    "line_count": 102,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "irfft",
+                    "start_line": 416,
+                    "end_line": 520,
+                    "line_count": 105,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "fftn",
+                    "start_line": 750,
+                    "end_line": 878,
+                    "line_count": 129,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "ifftn",
+                    "start_line": 882,
+                    "end_line": 1010,
+                    "line_count": 129,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "fft2",
+                    "start_line": 1014,
+                    "end_line": 1135,
+                    "line_count": 122,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "ifft2",
+                    "start_line": 1139,
+                    "end_line": 1257,
+                    "line_count": 119,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "rfftn",
+                    "start_line": 1261,
+                    "end_line": 1384,
+                    "line_count": 124,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "irfftn",
+                    "start_line": 1468,
+                    "end_line": 1603,
+                    "line_count": 136,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "format.py",
+            "issues": [
+                {
+                    "function_name": "open_memmap",
+                    "start_line": 864,
+                    "end_line": 968,
+                    "line_count": 105,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "recfunctions.py",
+            "issues": [
+                {
+                    "function_name": "merge_arrays",
+                    "start_line": 365,
+                    "end_line": 498,
+                    "line_count": 134,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "structured_to_unstructured",
+                    "start_line": 941,
+                    "end_line": 1068,
+                    "line_count": 128,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "unstructured_to_structured",
+                    "start_line": 1076,
+                    "end_line": 1181,
+                    "line_count": 106,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "join_by",
+                    "start_line": 1484,
+                    "end_line": 1660,
+                    "line_count": 177,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_arraypad_impl.py",
+            "issues": [
+                {
+                    "function_name": "pad",
+                    "start_line": 546,
+                    "end_line": 891,
+                    "line_count": 346,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_arraysetops_impl.py",
+            "issues": [
+                {
+                    "function_name": "unique",
+                    "start_line": 146,
+                    "end_line": 336,
+                    "line_count": 191,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "_in1d",
+                    "start_line": 862,
+                    "end_line": 1007,
+                    "line_count": 146,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "isin",
+                    "start_line": 1016,
+                    "end_line": 1133,
+                    "line_count": 118,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_function_base_impl.py",
+            "issues": [
+                {
+                    "function_name": "average",
+                    "start_line": 416,
+                    "end_line": 576,
+                    "line_count": 161,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "piecewise",
+                    "start_line": 659,
+                    "end_line": 778,
+                    "line_count": 120,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "select",
+                    "start_line": 787,
+                    "end_line": 891,
+                    "line_count": 105,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "gradient",
+                    "start_line": 977,
+                    "end_line": 1362,
+                    "line_count": 386,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "diff",
+                    "start_line": 1370,
+                    "end_line": 1498,
+                    "line_count": 129,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "interp",
+                    "start_line": 1506,
+                    "end_line": 1642,
+                    "line_count": 137,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "cov",
+                    "start_line": 2681,
+                    "end_line": 2895,
+                    "line_count": 215,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "corrcoef",
+                    "start_line": 2904,
+                    "end_line": 3055,
+                    "line_count": 152,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "bartlett",
+                    "start_line": 3159,
+                    "end_line": 3262,
+                    "line_count": 104,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "kaiser",
+                    "start_line": 3618,
+                    "end_line": 3745,
+                    "line_count": 128,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "percentile",
+                    "start_line": 4071,
+                    "end_line": 4277,
+                    "line_count": 207,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "quantile",
+                    "start_line": 4287,
+                    "end_line": 4541,
+                    "line_count": 255,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "_quantile",
+                    "start_line": 4774,
+                    "end_line": 4955,
+                    "line_count": 182,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "trapezoid",
+                    "start_line": 4963,
+                    "end_line": 5094,
+                    "line_count": 132,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "meshgrid",
+                    "start_line": 5121,
+                    "end_line": 5268,
+                    "line_count": 148,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "delete",
+                    "start_line": 5276,
+                    "end_line": 5452,
+                    "line_count": 177,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "insert",
+                    "start_line": 5460,
+                    "end_line": 5640,
+                    "line_count": 181,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "digitize",
+                    "start_line": 5722,
+                    "end_line": 5830,
+                    "line_count": 109,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_histograms_impl.py",
+            "issues": [
+                {
+                    "function_name": "histogram_bin_edges",
+                    "start_line": 478,
+                    "end_line": 681,
+                    "line_count": 204,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "histogram",
+                    "start_line": 690,
+                    "end_line": 903,
+                    "line_count": 214,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "histogramdd",
+                    "start_line": 918,
+                    "end_line": 1090,
+                    "line_count": 173,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_index_tricks_impl.py",
+            "issues": [
+                {
+                    "function_name": "fill_diagonal",
+                    "start_line": 816,
+                    "end_line": 944,
+                    "line_count": 129,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_nanfunctions_impl.py",
+            "issues": [
+                {
+                    "function_name": "nanmin",
+                    "start_line": 254,
+                    "end_line": 375,
+                    "line_count": 122,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "nanmax",
+                    "start_line": 384,
+                    "end_line": 504,
+                    "line_count": 121,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "nanmean",
+                    "start_line": 955,
+                    "end_line": 1056,
+                    "line_count": 102,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "nanpercentile",
+                    "start_line": 1229,
+                    "end_line": 1410,
+                    "line_count": 182,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "nanquantile",
+                    "start_line": 1420,
+                    "end_line": 1602,
+                    "line_count": 183,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "nanvar",
+                    "start_line": 1716,
+                    "end_line": 1896,
+                    "line_count": 181,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "nanstd",
+                    "start_line": 1906,
+                    "end_line": 2028,
+                    "line_count": 123,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_npyio_impl.py",
+            "issues": [
+                {
+                    "function_name": "load",
+                    "start_line": 309,
+                    "end_line": 494,
+                    "line_count": 186,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "_read",
+                    "start_line": 871,
+                    "end_line": 1126,
+                    "line_count": 256,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "loadtxt",
+                    "start_line": 1131,
+                    "end_line": 1400,
+                    "line_count": 270,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "savetxt",
+                    "start_line": 1413,
+                    "end_line": 1642,
+                    "line_count": 230,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "genfromtxt",
+                    "start_line": 1749,
+                    "end_line": 2496,
+                    "line_count": 748,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_polynomial_impl.py",
+            "issues": [
+                {
+                    "function_name": "poly",
+                    "start_line": 35,
+                    "end_line": 156,
+                    "line_count": 122,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "polyfit",
+                    "start_line": 450,
+                    "end_line": 695,
+                    "line_count": 246,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_shape_base_impl.py",
+            "issues": [
+                {
+                    "function_name": "take_along_axis",
+                    "start_line": 58,
+                    "end_line": 175,
+                    "line_count": 118,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "apply_along_axis",
+                    "start_line": 275,
+                    "end_line": 412,
+                    "line_count": 138,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "kron",
+                    "start_line": 1086,
+                    "end_line": 1197,
+                    "line_count": 112,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_stride_tricks_impl.py",
+            "issues": [
+                {
+                    "function_name": "sliding_window_view",
+                    "start_line": 122,
+                    "end_line": 337,
+                    "line_count": 216,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_twodim_base_impl.py",
+            "issues": [
+                {
+                    "function_name": "histogram2d",
+                    "start_line": 656,
+                    "end_line": 822,
+                    "line_count": 167,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_type_check_impl.py",
+            "issues": [
+                {
+                    "function_name": "nan_to_num",
+                    "start_line": 374,
+                    "end_line": 481,
+                    "line_count": 108,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_utils_impl.py",
+            "issues": [
+                {
+                    "function_name": "info",
+                    "start_line": 414,
+                    "end_line": 573,
+                    "line_count": 160,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_arraysetops.py",
+            "issues": [
+                {
+                    "function_name": "test_unique_1d",
+                    "start_line": 631,
+                    "end_line": 798,
+                    "line_count": 168,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_packbits.py",
+            "issues": [
+                {
+                    "function_name": "test_packbits_large",
+                    "start_line": 53,
+                    "end_line": 211,
+                    "line_count": 159,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_recfunctions.py",
+            "issues": [
+                {
+                    "function_name": "test_structured_to_unstructured",
+                    "start_line": 230,
+                    "end_line": 374,
+                    "line_count": 145,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_linalg.py",
+            "issues": [
+                {
+                    "function_name": "inv",
+                    "start_line": 497,
+                    "end_line": 610,
+                    "line_count": 114,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "matrix_power",
+                    "start_line": 618,
+                    "end_line": 731,
+                    "line_count": 114,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "qr",
+                    "start_line": 929,
+                    "end_line": 1128,
+                    "line_count": 200,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "eig",
+                    "start_line": 1332,
+                    "end_line": 1482,
+                    "line_count": 151,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "eigh",
+                    "start_line": 1486,
+                    "end_line": 1630,
+                    "line_count": 145,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "svd",
+                    "start_line": 1640,
+                    "end_line": 1824,
+                    "line_count": 185,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "cond",
+                    "start_line": 1886,
+                    "end_line": 2003,
+                    "line_count": 118,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "matrix_rank",
+                    "start_line": 2011,
+                    "end_line": 2119,
+                    "line_count": 109,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "pinv",
+                    "start_line": 2129,
+                    "end_line": 2240,
+                    "line_count": 112,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "lstsq",
+                    "start_line": 2395,
+                    "end_line": 2540,
+                    "line_count": 146,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "norm",
+                    "start_line": 2576,
+                    "end_line": 2831,
+                    "line_count": 256,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "multi_dot",
+                    "start_line": 2842,
+                    "end_line": 2958,
+                    "line_count": 117,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "core.py",
+            "issues": [
+                {
+                    "function_name": "masked_where",
+                    "start_line": 1880,
+                    "end_line": 2000,
+                    "line_count": 121,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "diff",
+                    "start_line": 7817,
+                    "end_line": 7950,
+                    "line_count": 134,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "allclose",
+                    "start_line": 8485,
+                    "end_line": 8591,
+                    "line_count": 107,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "__new__",
+                    "start_line": 2877,
+                    "end_line": 3019,
+                    "line_count": 143,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "__getitem__",
+                    "start_line": 3291,
+                    "end_line": 3415,
+                    "line_count": 125,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "max",
+                    "start_line": 6002,
+                    "end_line": 6106,
+                    "line_count": 105,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "extras.py",
+            "issues": [
+                {
+                    "function_name": "average",
+                    "start_line": 548,
+                    "end_line": 713,
+                    "line_count": 166,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_extras.py",
+            "issues": [
+                {
+                    "function_name": "test_compress_nd",
+                    "start_line": 539,
+                    "end_line": 649,
+                    "line_count": 111,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_dot",
+                    "start_line": 715,
+                    "end_line": 824,
+                    "line_count": 110,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "chebyshev.py",
+            "issues": [
+                {
+                    "function_name": "chebint",
+                    "start_line": 964,
+                    "end_line": 1086,
+                    "line_count": 123,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "chebfit",
+                    "start_line": 1504,
+                    "end_line": 1626,
+                    "line_count": 123,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "hermite.py",
+            "issues": [
+                {
+                    "function_name": "hermint",
+                    "start_line": 679,
+                    "end_line": 796,
+                    "line_count": 118,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "hermfit",
+                    "start_line": 1306,
+                    "end_line": 1437,
+                    "line_count": 132,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "hermite_e.py",
+            "issues": [
+                {
+                    "function_name": "hermeint",
+                    "start_line": 677,
+                    "end_line": 794,
+                    "line_count": 118,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "hermefit",
+                    "start_line": 1231,
+                    "end_line": 1362,
+                    "line_count": 132,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "laguerre.py",
+            "issues": [
+                {
+                    "function_name": "lagint",
+                    "start_line": 676,
+                    "end_line": 795,
+                    "line_count": 120,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "lagfit",
+                    "start_line": 1289,
+                    "end_line": 1420,
+                    "line_count": 132,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "legendre.py",
+            "issues": [
+                {
+                    "function_name": "legint",
+                    "start_line": 704,
+                    "end_line": 827,
+                    "line_count": 124,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "legfit",
+                    "start_line": 1246,
+                    "end_line": 1370,
+                    "line_count": 125,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "polynomial.py",
+            "issues": [
+                {
+                    "function_name": "polyint",
+                    "start_line": 546,
+                    "end_line": 660,
+                    "line_count": 115,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "polyfit",
+                    "start_line": 1285,
+                    "end_line": 1436,
+                    "line_count": 152,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "utils.py",
+            "issues": [
+                {
+                    "function_name": "assert_equal",
+                    "start_line": 216,
+                    "end_line": 423,
+                    "line_count": 208,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "assert_almost_equal",
+                    "start_line": 467,
+                    "end_line": 590,
+                    "line_count": 124,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "assert_array_compare",
+                    "start_line": 693,
+                    "end_line": 892,
+                    "line_count": 200,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "assert_array_equal",
+                    "start_line": 895,
+                    "end_line": 1021,
+                    "line_count": 127,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "assert_array_almost_equal",
+                    "start_line": 1024,
+                    "end_line": 1136,
+                    "line_count": 113,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "assert_array_less",
+                    "start_line": 1139,
+                    "end_line": 1251,
+                    "line_count": 113,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "assert_allclose",
+                    "start_line": 1572,
+                    "end_line": 1678,
+                    "line_count": 107,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_public_api.py",
+            "issues": [
+                {
+                    "function_name": "test_functions_single_location",
+                    "start_line": 570,
+                    "end_line": 682,
+                    "line_count": 113,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "arrayprint.py",
+            "issues": [
+                {
+                    "function_name": "set_printoptions",
+                    "start_line": 114,
+                    "end_line": 295,
+                    "line_count": 182,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "array2string",
+                    "start_line": 606,
+                    "end_line": 784,
+                    "line_count": 179,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "_formatArray",
+                    "start_line": 828,
+                    "end_line": 950,
+                    "line_count": 123,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "recurser",
+                    "start_line": 837,
+                    "end_line": 939,
+                    "line_count": 103,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "defchararray.py",
+            "issues": [
+                {
+                    "function_name": "array",
+                    "start_line": 1214,
+                    "end_line": 1353,
+                    "line_count": 140,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "einsumfunc.py",
+            "issues": [
+                {
+                    "function_name": "_greedy_path",
+                    "start_line": 328,
+                    "end_line": 440,
+                    "line_count": 113,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "_can_dot",
+                    "start_line": 443,
+                    "end_line": 550,
+                    "line_count": 108,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "_parse_einsum_input",
+                    "start_line": 553,
+                    "end_line": 730,
+                    "line_count": 178,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "einsum_path",
+                    "start_line": 744,
+                    "end_line": 1047,
+                    "line_count": 304,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "einsum",
+                    "start_line": 1059,
+                    "end_line": 1500,
+                    "line_count": 442,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "fromnumeric.py",
+            "issues": [
+                {
+                    "function_name": "reshape",
+                    "start_line": 212,
+                    "end_line": 324,
+                    "line_count": 113,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "choose",
+                    "start_line": 334,
+                    "end_line": 455,
+                    "line_count": 122,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "partition",
+                    "start_line": 759,
+                    "end_line": 869,
+                    "line_count": 111,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "sort",
+                    "start_line": 970,
+                    "end_line": 1123,
+                    "line_count": 154,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "argsort",
+                    "start_line": 1131,
+                    "end_line": 1244,
+                    "line_count": 114,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "diagonal",
+                    "start_line": 1696,
+                    "end_line": 1823,
+                    "line_count": 128,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "ravel",
+                    "start_line": 1905,
+                    "end_line": 2011,
+                    "line_count": 107,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "sum",
+                    "start_line": 2339,
+                    "end_line": 2468,
+                    "line_count": 130,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "any",
+                    "start_line": 2478,
+                    "end_line": 2581,
+                    "line_count": 104,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "max",
+                    "start_line": 3054,
+                    "end_line": 3165,
+                    "line_count": 112,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "min",
+                    "start_line": 3191,
+                    "end_line": 3303,
+                    "line_count": 113,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "prod",
+                    "start_line": 3329,
+                    "end_line": 3446,
+                    "line_count": 118,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "mean",
+                    "start_line": 3736,
+                    "end_line": 3861,
+                    "line_count": 126,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "std",
+                    "start_line": 3870,
+                    "end_line": 4065,
+                    "line_count": 196,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "var",
+                    "start_line": 4074,
+                    "end_line": 4269,
+                    "line_count": 196,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "function_base.py",
+            "issues": [
+                {
+                    "function_name": "linspace",
+                    "start_line": 26,
+                    "end_line": 187,
+                    "line_count": 162,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "logspace",
+                    "start_line": 196,
+                    "end_line": 302,
+                    "line_count": 107,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "geomspace",
+                    "start_line": 311,
+                    "end_line": 452,
+                    "line_count": 142,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "getlimits.py",
+            "issues": [
+                {
+                    "function_name": "_register_known_types",
+                    "start_line": 167,
+                    "end_line": 309,
+                    "line_count": 143,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "multiarray.py",
+            "issues": [
+                {
+                    "function_name": "concatenate",
+                    "start_line": 181,
+                    "end_line": 286,
+                    "line_count": 106,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "lexsort",
+                    "start_line": 460,
+                    "end_line": 577,
+                    "line_count": 118,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "numeric.py",
+            "issues": [
+                {
+                    "function_name": "tensordot",
+                    "start_line": 969,
+                    "end_line": 1178,
+                    "line_count": 210,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "roll",
+                    "start_line": 1186,
+                    "end_line": 1288,
+                    "line_count": 103,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "cross",
+                    "start_line": 1523,
+                    "end_line": 1739,
+                    "line_count": 217,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "binary_repr",
+                    "start_line": 2015,
+                    "end_line": 2119,
+                    "line_count": 105,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "isclose",
+                    "start_line": 2338,
+                    "end_line": 2453,
+                    "line_count": 116,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "records.py",
+            "issues": [
+                {
+                    "function_name": "fromfile",
+                    "start_line": 840,
+                    "end_line": 941,
+                    "line_count": 102,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "array",
+                    "start_line": 945,
+                    "end_line": 1091,
+                    "line_count": 147,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "shape_base.py",
+            "issues": [
+                {
+                    "function_name": "block",
+                    "start_line": 785,
+                    "end_line": 953,
+                    "line_count": 169,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_asarray.py",
+            "issues": [
+                {
+                    "function_name": "require",
+                    "start_line": 29,
+                    "end_line": 132,
+                    "line_count": 104,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_internal.py",
+            "issues": [
+                {
+                    "function_name": "__dtype_from_pep3118",
+                    "start_line": 671,
+                    "end_line": 817,
+                    "line_count": 147,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "_machar.py",
+            "issues": [
+                {
+                    "function_name": "_do_init",
+                    "start_line": 122,
+                    "end_line": 337,
+                    "line_count": 216,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "generate_umath.py",
+            "issues": [
+                {
+                    "function_name": "make_arrays",
+                    "start_line": 1384,
+                    "end_line": 1485,
+                    "line_count": 102,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_api.py",
+            "issues": [
+                {
+                    "function_name": "test_array_array",
+                    "start_line": 13,
+                    "end_line": 153,
+                    "line_count": 141,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_array_astype",
+                    "start_line": 166,
+                    "end_line": 276,
+                    "line_count": 111,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_array_interface.py",
+            "issues": [
+                {
+                    "function_name": "get_module",
+                    "start_line": 8,
+                    "end_line": 131,
+                    "line_count": 124,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_datetime.py",
+            "issues": [
+                {
+                    "function_name": "test_datetime_as_string",
+                    "start_line": 1777,
+                    "end_line": 1881,
+                    "line_count": 105,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_datetime_busday_holidays_offset",
+                    "start_line": 2190,
+                    "end_line": 2356,
+                    "line_count": 167,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_einsum.py",
+            "issues": [
+                {
+                    "function_name": "test_einsum_views",
+                    "start_line": 225,
+                    "end_line": 362,
+                    "line_count": 138,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "check_einsum_sums",
+                    "start_line": 364,
+                    "end_line": 667,
+                    "line_count": 304,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_indexing.py",
+            "issues": [
+                {
+                    "function_name": "_get_multi_index",
+                    "start_line": 886,
+                    "end_line": 1123,
+                    "line_count": 238,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_mem_policy.py",
+            "issues": [
+                {
+                    "function_name": "get_module",
+                    "start_line": 15,
+                    "end_line": 228,
+                    "line_count": 214,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_multiarray.py",
+            "issues": [
+                {
+                    "function_name": "test_argsort",
+                    "start_line": 2405,
+                    "end_line": 2546,
+                    "line_count": 142,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_partition",
+                    "start_line": 2857,
+                    "end_line": 3071,
+                    "line_count": 215,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_ufunc_binop_interaction",
+                    "start_line": 3819,
+                    "end_line": 4001,
+                    "line_count": 183,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_nditer.py",
+            "issues": [
+                {
+                    "function_name": "test_iter_buffered_cast_subarray",
+                    "start_line": 2095,
+                    "end_line": 2260,
+                    "line_count": 166,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_numeric.py",
+            "issues": [
+                {
+                    "function_name": "_test_array_equal_parametrizations",
+                    "start_line": 2066,
+                    "end_line": 2190,
+                    "line_count": 125,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_regression.py",
+            "issues": [
+                {
+                    "function_name": "test_object_array_refcounting",
+                    "start_line": 899,
+                    "end_line": 1000,
+                    "line_count": 102,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_scalarprint.py",
+            "issues": [
+                {
+                    "function_name": "test_dragon4",
+                    "start_line": 94,
+                    "end_line": 261,
+                    "line_count": 168,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_ufunc.py",
+            "issues": [
+                {
+                    "function_name": "test_axes_argument",
+                    "start_line": 1071,
+                    "end_line": 1173,
+                    "line_count": 103,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_umath.py",
+            "issues": [
+                {
+                    "function_name": "test_ufunc_override_mro",
+                    "start_line": 3309,
+                    "end_line": 3442,
+                    "line_count": 134,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_ufunc_override_methods",
+                    "start_line": 3444,
+                    "end_line": 3613,
+                    "line_count": 170,
+                    "threshold": 100
+                },
+                {
+                    "function_name": "test_ufunc_override_with_super",
+                    "start_line": 3832,
+                    "end_line": 4003,
+                    "line_count": 172,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "test_umath_complex.py",
+            "issues": [
+                {
+                    "function_name": "test_special_values",
+                    "start_line": 141,
+                    "end_line": 273,
+                    "line_count": 133,
+                    "threshold": 100
+                }
+            ]
+        },
+        {
+            "file": "refguide_check.py",
+            "issues": [
+                {
+                    "function_name": "main",
+                    "start_line": 550,
+                    "end_line": 657,
+                    "line_count": 108,
+                    "threshold": 100
                 }
             ]
         }
     ],
     "god_classes": [
         {
-            "file": "example.py",
-            "class_name": "SuperComplexSystemManager",
+            "file": "gnu.py",
+            "class_name": "GnuFCompiler",
+            "wmc": 56,
+            "tcc": 0.06060606060606061,
+            "atfd": 21
+        },
+        {
+            "file": "gnu.py",
+            "class_name": "Gnu95FCompiler",
+            "wmc": 55,
+            "tcc": 0.2545454545454545,
+            "atfd": 37
+        },
+        {
+            "file": "__init__.py",
+            "class_name": "FCompiler",
+            "wmc": 98,
+            "tcc": 0.23172905525846701,
+            "atfd": 28
+        },
+        {
+            "file": "symbolic.py",
+            "class_name": "Expr",
+            "wmc": 226,
+            "tcc": 0.23387096774193547,
+            "atfd": 74
+        },
+        {
+            "file": "test_symbolic.py",
+            "class_name": "TestSymbolic",
+            "wmc": 248,
+            "tcc": 0.0,
+            "atfd": 41
+        },
+        {
+            "file": "test_pocketfft.py",
+            "class_name": "TestFFT1D",
+            "wmc": 74,
+            "tcc": 0.0,
+            "atfd": 29
+        },
+        {
+            "file": "test_arraysetops.py",
+            "class_name": "TestSetOps",
+            "wmc": 48,
+            "tcc": 0.0,
+            "atfd": 35
+        },
+        {
+            "file": "test_function_base.py",
+            "class_name": "TestVectorize",
+            "wmc": 51,
+            "tcc": 0.0,
+            "atfd": 28
+        },
+        {
+            "file": "test_function_base.py",
+            "class_name": "TestPercentile",
+            "wmc": 52,
+            "tcc": 0.0,
+            "atfd": 42
+        },
+        {
+            "file": "test_function_base.py",
+            "class_name": "TestQuantile",
+            "wmc": 55,
+            "tcc": 0.0,
+            "atfd": 36
+        },
+        {
+            "file": "test_histograms.py",
+            "class_name": "TestHistogram",
             "wmc": 41,
-            "tcc": 0.015873015873015872,
-            "atfd": 3
+            "tcc": 0.0,
+            "atfd": 46
+        },
+        {
+            "file": "test_io.py",
+            "class_name": "TestLoadTxt",
+            "wmc": 47,
+            "tcc": 0.0024390243902439024,
+            "atfd": 50
+        },
+        {
+            "file": "test_io.py",
+            "class_name": "TestFromTxt",
+            "wmc": 118,
+            "tcc": 0.0,
+            "atfd": 56
+        },
+        {
+            "file": "test_core.py",
+            "class_name": "TestMaskedArray",
+            "wmc": 68,
+            "tcc": 0.017533606078316773,
+            "atfd": 153
+        },
+        {
+            "file": "test_core.py",
+            "class_name": "TestMaskedArrayArithmetic",
+            "wmc": 66,
+            "tcc": 0.03741496598639456,
+            "atfd": 144
+        },
+        {
+            "file": "test_core.py",
+            "class_name": "TestMaskedArrayMethods",
+            "wmc": 49,
+            "tcc": 0.002699055330634278,
+            "atfd": 138
+        },
+        {
+            "file": "test_core.py",
+            "class_name": "TestMaskedArrayFunctions",
+            "wmc": 53,
+            "tcc": 0.0,
+            "atfd": 80
+        },
+        {
+            "file": "test_extras.py",
+            "class_name": "TestMedian",
+            "wmc": 44,
+            "tcc": 0.0,
+            "atfd": 38
+        },
+        {
+            "file": "defmatrix.py",
+            "class_name": "matrix",
+            "wmc": 74,
+            "tcc": 0.03225806451612903,
+            "atfd": 20
+        },
+        {
+            "file": "test_array_coercion.py",
+            "class_name": "TestScalarDiscovery",
+            "wmc": 44,
+            "tcc": 0.0,
+            "atfd": 32
+        },
+        {
+            "file": "test_casting_unittests.py",
+            "class_name": "TestCasting",
+            "wmc": 174,
+            "tcc": 0.09473684210526316,
+            "atfd": 87
+        },
+        {
+            "file": "test_datetime.py",
+            "class_name": "TestDateTime",
+            "wmc": 152,
+            "tcc": 0.0,
+            "atfd": 113
+        },
+        {
+            "file": "test_einsum.py",
+            "class_name": "TestEinsum",
+            "wmc": 121,
+            "tcc": 0.3151515151515151,
+            "atfd": 63
+        },
+        {
+            "file": "test_half.py",
+            "class_name": "TestHalf",
+            "wmc": 53,
+            "tcc": 0.08823529411764706,
+            "atfd": 88
+        },
+        {
+            "file": "test_indexing.py",
+            "class_name": "TestIndexing",
+            "wmc": 54,
+            "tcc": 0.0,
+            "atfd": 47
+        },
+        {
+            "file": "test_mem_overlap.py",
+            "class_name": "TestUFunc",
+            "wmc": 42,
+            "tcc": 0.2564102564102564,
+            "atfd": 46
+        },
+        {
+            "file": "test_multiarray.py",
+            "class_name": "TestCreation",
+            "wmc": 46,
+            "tcc": 0.006153846153846154,
+            "atfd": 32
+        },
+        {
+            "file": "test_multiarray.py",
+            "class_name": "TestMethods",
+            "wmc": 185,
+            "tcc": 0.01557935735150925,
+            "atfd": 175
+        },
+        {
+            "file": "test_multiarray.py",
+            "class_name": "TestIO",
+            "wmc": 57,
+            "tcc": 0.13333333333333333,
+            "atfd": 48
+        },
+        {
+            "file": "test_multiarray.py",
+            "class_name": "TestNewBufferProtocol",
+            "wmc": 42,
+            "tcc": 0.12923076923076923,
+            "atfd": 70
+        },
+        {
+            "file": "test_numeric.py",
+            "class_name": "TestNonarrayArgs",
+            "wmc": 79,
+            "tcc": 0.0,
+            "atfd": 61
+        },
+        {
+            "file": "test_numeric.py",
+            "class_name": "TestTypes",
+            "wmc": 46,
+            "tcc": 0.01904761904761905,
+            "atfd": 42
+        },
+        {
+            "file": "test_regression.py",
+            "class_name": "TestRegression",
+            "wmc": 387,
+            "tcc": 0.0,
+            "atfd": 306
+        },
+        {
+            "file": "test_strings.py",
+            "class_name": "TestMethods",
+            "wmc": 47,
+            "tcc": 0.009523809523809525,
+            "atfd": 12
+        },
+        {
+            "file": "test_ufunc.py",
+            "class_name": "TestUfunc",
+            "wmc": 261,
+            "tcc": 0.0057553956834532375,
+            "atfd": 204
+        },
+        {
+            "file": "test_umath.py",
+            "class_name": "TestDivision",
+            "wmc": 42,
+            "tcc": 0.0,
+            "atfd": 28
+        },
+        {
+            "file": "test_umath.py",
+            "class_name": "TestSpecialFloats",
+            "wmc": 60,
+            "tcc": 0.0,
+            "atfd": 42
         }
     ],
     "large_classes": [
         {
-            "file": "aa.py",
+            "file": "misc_util.py",
             "issues": [
                 {
-                    "class_name": "GodClass",
-                    "nloc": 45,
-                    "start_line": 34,
-                    "end_line": 78
-                },
-                {
-                    "class_name": "LargeClass",
-                    "nloc": 51,
-                    "start_line": 81,
-                    "end_line": 131
+                    "class_name": "Configuration",
+                    "nloc": 1370,
+                    "start_line": 750,
+                    "end_line": 2119
                 }
             ]
         },
         {
-            "file": "example.py",
+            "file": "test_io.py",
             "issues": [
                 {
-                    "class_name": "SuperComplexSystemManager",
-                    "nloc": 129,
-                    "start_line": 122,
-                    "end_line": 250
+                    "class_name": "TestFromTxt",
+                    "nloc": 1206,
+                    "start_line": 1343,
+                    "end_line": 2548
+                }
+            ]
+        },
+        {
+            "file": "core.py",
+            "issues": [
+                {
+                    "class_name": "MaskedArray",
+                    "nloc": 3812,
+                    "start_line": 2765,
+                    "end_line": 6576
+                }
+            ]
+        },
+        {
+            "file": "_polybase.py",
+            "issues": [
+                {
+                    "class_name": "ABCPolyBase",
+                    "nloc": 1179,
+                    "start_line": 19,
+                    "end_line": 1197
+                }
+            ]
+        },
+        {
+            "file": "test_generator_mt19937.py",
+            "issues": [
+                {
+                    "class_name": "TestRandomDist",
+                    "nloc": 1162,
+                    "start_line": 712,
+                    "end_line": 1873
+                }
+            ]
+        },
+        {
+            "file": "test_datetime.py",
+            "issues": [
+                {
+                    "class_name": "TestDateTime",
+                    "nloc": 2630,
+                    "start_line": 33,
+                    "end_line": 2662
+                }
+            ]
+        },
+        {
+            "file": "test_einsum.py",
+            "issues": [
+                {
+                    "class_name": "TestEinsum",
+                    "nloc": 1099,
+                    "start_line": 17,
+                    "end_line": 1115
+                }
+            ]
+        },
+        {
+            "file": "test_multiarray.py",
+            "issues": [
+                {
+                    "class_name": "TestMethods",
+                    "nloc": 1899,
+                    "start_line": 1875,
+                    "end_line": 3773
+                }
+            ]
+        },
+        {
+            "file": "test_regression.py",
+            "issues": [
+                {
+                    "class_name": "TestRegression",
+                    "nloc": 2634,
+                    "start_line": 23,
+                    "end_line": 2656
+                }
+            ]
+        },
+        {
+            "file": "test_ufunc.py",
+            "issues": [
+                {
+                    "class_name": "TestUfunc",
+                    "nloc": 2539,
+                    "start_line": 193,
+                    "end_line": 2731
                 }
             ]
         }

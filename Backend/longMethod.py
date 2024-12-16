@@ -1,6 +1,6 @@
 import ast
 
-def detect_long_methods(file_content, line_limit=10):
+def detect_long_methods(file_content, line_limit=100):
     import ast
     
     tree = ast.parse(file_content)

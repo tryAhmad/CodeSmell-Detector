@@ -100,5 +100,5 @@ Below is the endpoint exposed by the Flask backend:
 ## Contact
 For any questions or suggestions, contact:
 
-Name: Muhammad Ahmad
-Email: ahmadsaeed3220@gmail.com
+-Name: Muhammad Ahmad
+-Email: ahmadsaeed3220@gmail.com

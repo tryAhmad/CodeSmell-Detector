@@ -1,0 +1,89 @@
+{
+    "long_parameter_list": [
+        {
+            "file": "aa.py",
+            "issues": [
+                {
+                    "function_name": "process_data",
+                    "line_number": 6,
+                    "parameter_count": 9,
+                    "threshold": 7
+                }
+            ]
+        }
+    ],
+    "long_methods": [
+        {
+            "file": "example.py",
+            "issues": [
+                {
+                    "function_name": "__init__",
+                    "start_line": 123,
+                    "end_line": 133,
+                    "line_count": 11,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "_load_complex_configuration",
+                    "start_line": 135,
+                    "end_line": 148,
+                    "line_count": 14,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "perform_complex_data_operation",
+                    "start_line": 150,
+                    "end_line": 186,
+                    "line_count": 37,
+                    "threshold": 10
+                },
+                {
+                    "function_name": "_validate_input",
+                    "start_line": 188,
+                    "end_line": 203,
+                    "line_count": 16,
+                    "threshold": 10
+                }
+            ]
+        }
+    ],
+    "god_classes": [
+        {
+            "file": "example.py",
+            "class_name": "SuperComplexSystemManager",
+            "wmc": 41,
+            "tcc": 0.015873015873015872,
+            "atfd": 3
+        }
+    ],
+    "large_classes": [
+        {
+            "file": "aa.py",
+            "issues": [
+                {
+                    "class_name": "GodClass",
+                    "nloc": 45,
+                    "start_line": 34,
+                    "end_line": 78
+                },
+                {
+                    "class_name": "LargeClass",
+                    "nloc": 51,
+                    "start_line": 81,
+                    "end_line": 131
+                }
+            ]
+        },
+        {
+            "file": "example.py",
+            "issues": [
+                {
+                    "class_name": "SuperComplexSystemManager",
+                    "nloc": 129,
+                    "start_line": 122,
+                    "end_line": 250
+                }
+            ]
+        }
+    ]
+}

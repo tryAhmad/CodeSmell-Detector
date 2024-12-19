@@ -36,12 +36,12 @@ def analyze_folder():
                 # Long Parameter List
                 long_params = detect_long_parameter_list(code)
                 if long_params:
-                    results["long_parameter_list"].append({"file": file, "issues": long_params})
+                    results["long_parameter_list"].append({"file": file,"file path": file_path , "issues": long_params})
 
                 # Long Methods
                 long_methods = detect_long_methods(code)
                 if long_methods:
-                    results["long_methods"].append({"file": file, "issues": long_methods})
+                    results["long_methods"].append({"file": file,"file path": file_path, "issues": long_methods})
 
                 # God Classes
                 god_class_detector = GodClassDetector(code)
@@ -51,6 +51,7 @@ def analyze_folder():
                 if god_classes:
                     for class_name, metrics in god_classes:
                         results["god_classes"].append({
+                            "file path": file_path,
                             "file": file,
                             "class_name": class_name,
                             "wmc": metrics["wmc"],
@@ -61,7 +62,7 @@ def analyze_folder():
                 # Large Classes
                 large_classes = detect_large_classes(code)
                 if large_classes:
-                    results["large_classes"].append({"file": file, "issues": large_classes})
+                    results["large_classes"].append({"file": file,"file path": file_path, "issues": large_classes})
 
     # Save results to a JSON file
     output_file = "analysis_results.json"

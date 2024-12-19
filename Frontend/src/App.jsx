@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import "./App.css";
 
 const App = () => {
   const [folderPath, setFolderPath] = useState("");
   const [results, setResults] = useState(null);
   const [error, setError] = useState("");
+
+  const COLORS = ["#074799", "#006A67", "#000000", "#581845"];
+
+  var totalErrors;
 
   const handleInputChange = (e) => {
     setFolderPath(e.target.value);
@@ -43,27 +48,106 @@ const App = () => {
     }
   };
 
-  const totalLongParameterSmells = results?.long_parameter_list?.reduce(
-    (total, file) => total + file.issues.length,
-    0
-  );
+  const getPieChartData = () => {
+    if (!results) return [];
+
+    return [
+      {
+        name: "Long Methods",
+        value:
+          results.long_methods?.reduce(
+            (total, file) => total + file.issues.length,
+            0
+          ) || 0,
+      },
+      {
+        name: "God Classes",
+        value: results.god_classes?.length || 0,
+      },
+      {
+        name: "Large Classes",
+        value:
+          results.large_classes?.reduce(
+            (total, file) => total + file.issues.length,
+            0
+          ) || 0,
+      },
+      {
+        name: "Long Parameter Lists",
+        value:
+          results.long_parameter_list?.reduce(
+            (total, file) => total + file.issues.length,
+            0
+          ) || 0,
+      },
+    ];
+  };
+
+  const getTotalCodeSmells = () => {
+    if (!results) return 0;
+
+    return (
+      (results.long_methods?.reduce(
+        (total, file) => total + file.issues.length,
+        0
+      ) || 0) +
+      (results.god_classes?.length || 0) +
+      (results.large_classes?.reduce(
+        (total, file) => total + file.issues.length,
+        0
+      ) || 0) +
+      (results.long_parameter_list?.reduce(
+        (total, file) => total + file.issues.length,
+        0
+      ) || 0)
+    );
+  };
+
 
   const renderResults = () => {
     if (!results) return null;
 
     return (
       <div>
-        <h2>Analysis Results:</h2>
+        <h1>Analysis Results:</h1>
+        <h3>Total Code Smells Found: {getTotalCodeSmells()}</h3>
+
+        <div className="piechart">
+          {/* Render the Recharts PieChart */}
+          <PieChart width={500} height={400}>
+            <Pie
+              data={getPieChartData()}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={120}
+              fill="#8884d8"
+              label
+            >
+              {getPieChartData().map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={COLORS[index % COLORS.length]}
+                />
+              ))}
+            </Pie>
+            <Tooltip />
+            <Legend />
+          </PieChart>
+        </div>
         <div className="results-container">
           {/* Long Methods */}
           {results.long_methods?.length > 0 && (
             <div className="result-card">
               <h3>Long Methods</h3>
-              <strong>Code Smells Detected:</strong>{" "}
-              {results.long_methods.reduce(
-                (total, file) => total + file.issues.length,
-                0
-              ) || "0"}
+              <h2 className="detected">
+                Code Smells Detected:
+                {results.long_methods.reduce(
+                  (total, file) => total + file.issues.length,
+                  0
+                ) || "0"}
+              </h2>
               <ul>
                 {results.long_methods.map((file, fileIndex) => (
                   <li key={fileIndex}>
@@ -100,8 +184,10 @@ const App = () => {
           {results.god_classes?.length > 0 && (
             <div className="result-card">
               <h3>God Classes</h3>
-              <strong>Code Smells Detected:</strong>{" "}
-              {results.god_classes.length || "0"}
+              <h2 className="detected">
+                Code Smells Detected:
+                {results.god_classes.length || "0"}
+              </h2>
               <ul>
                 {results.god_classes.map((cls, index) => (
                   <li key={index}>
@@ -131,11 +217,13 @@ const App = () => {
           {results.large_classes?.length > 0 && (
             <div className="result-card">
               <h3>Large Classes</h3>
-              <strong>Code Smells Detected:</strong>{" "}
-              {results.large_classes.reduce(
-                (total, file) => total + file.issues.length,
-                0
-              ) || "0"}
+              <h2 className="detected">
+                Code Smells Detected:
+                {results.large_classes.reduce(
+                  (total, file) => total + file.issues.length,
+                  0
+                ) || "0"}
+              </h2>
               <ul>
                 {results.large_classes.map((file, fileIndex) => (
                   <li key={fileIndex}>
@@ -168,9 +256,14 @@ const App = () => {
           {/* Functions with Long Parameter Lists */}
           {results?.long_parameter_list?.length > 0 && (
             <div className="result-card">
-              <h3>Functions with Long Parameter Lists</h3>
-              <strong>Code Smells Detected:</strong>{" "}
-              {totalLongParameterSmells || "0"}
+              <h3>Long Parameter Lists</h3>
+              <h2 className="detected">
+                Code Smells Detected:
+                {results.long_parameter_list.reduce(
+                  (total, file) => total + file.issues.length,
+                  0
+                ) || "0"}
+              </h2>
               <ul>
                 {results.long_parameter_list.map((file, fileIndex) => (
                   <li key={fileIndex}>
@@ -229,8 +322,8 @@ const App = () => {
         backgroundColor: "lightgrey",
       }}
     >
-      <h1 style={{ fontFamily: "fantasy", color: "#3d3c3c" }}>
-        Code Smell Analyzer
+      <h1 style={{ fontFamily: "fantasy", color: "#3d3c3c", fontSize:"60px" }}>
+        Code Smell Detector
       </h1>
       <div
         style={{
@@ -242,7 +335,7 @@ const App = () => {
       >
         <label
           htmlFor="folderPath"
-          style={{ color: "black", fontFamily: "fantasy" }}
+          style={{ color: "black", fontFamily: "fantasy", fontSize:"20px" }}
         >
           Enter Folder Path:
         </label>

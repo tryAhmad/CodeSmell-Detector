@@ -1,4 +1,4 @@
-# Code Smell Detection Project
+# Code Smell Detector
 
 This project is designed to detect common code smells such as Long Methods, God Classes, Long Parameter Lists, and Large Classes. It uses a Flask backend to provide APIs for code analysis and a React frontend for a user-friendly interface.
 
